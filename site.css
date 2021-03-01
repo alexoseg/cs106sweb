@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans";
+  font-weight: 300;
+  color: #444444;
+  box-sizing: border-box;
+}
+ 
+#header {
+  background: rgb(8, 186, 185);
+  background: linear-gradient(
+    90deg,
+    rgba(8, 186, 185, 1) 0%,
+    rgba(22, 216, 187, 1) 50%,
+    rgba(35, 243, 189, 1) 100%
+  );
+  height: 400px;
+}
+
+#description {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+#objectives {
+  width: 100%;
+  background-color: #f6f6f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+#course-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+#instructors {
+  width: 100%;
+  background-color: #f6f6f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+#schedule {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+#header-title {
+  color: white;
+  font-size: 50px;
+}
+
+#header-date {
+  color: white;
+  font-size: 35px;
+}
+
+#announce-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#announce-text {
+  font-size: 20px;
+}
+
+#description-title {
+  font-size: 55px;
+  margin-bottom: 5px;
+}
+
+#description-subtitle {
+  font-size: 30px;
+}
+
+#description-text {
+  font-size: 25px;
+  line-height: 31px;
+}
+
+#objectives-desc-box {
+  width: 380px;
+  height: 510px;
+  background-color: #16d8bb;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px 0px 30px;
+  box-shadow: 0px 0px 5px 0px rgb(132, 132, 132, 0.25);
+}
+
+#objectives-desc-title {
+  font-size: 34px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#objectives-desc-subtitle {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.instructor-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-rows: 305px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .instructor-grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: 305px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .instructor-grid-container {
+    display: grid;
+    grid-template-columns: auto, auto, auto;
+    grid-auto-rows: 305px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+
+.instructor-box {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+}
+
+.instructor-img-container {
+  flex: 8;
+  width: 100%;
+}
+
+.instructor-img {
+  height: 100%;
+  width: 100%;
+}
+
+.instructor-info-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.instructor-name {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.instructor-email {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.hr-style {
+  width: 183px;
+  border-color: #16d8bb;
+  margin: 10px 0px;
+}
+
+.title-text {
+  font-weight: 300;
+  font-size: 34px;
+  color: #444444; 
+}
+
+.table-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-style {
+  border-collapse: collapse;
+  margin: 15px 0;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+th, td {
+  padding: 12px 40px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+thead th {
+  color: white;
+  text-align: center;
+}
+
+thead tr {
+  background-color: #16d8bb;
+}
+
+.course-detail-box {
+  height: 280px;
+  width: 380px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(68, 68, 68, 0.25);
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course-details-boxes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  flex: 2;
+}
+
+.course-details-boxes-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.course-details-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  height: 100%;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+}
+
+.objectives-container {
+  max-width: 1400px;
+  width: 1400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.schedule-container {
+  max-width: 1400px;
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.course-details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1400px;
+}
+
+.half {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.announce-box {
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  width: 500px;
+  height: 250px;
+  padding: 0px 15px;
+}
+
+.objectives-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 330px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(68, 68, 68, 0.25);
+  padding: 40px 18px 0px 18px;
+  border-radius: 5px;
+}
+
+.objectives-check-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.objectives-check-subtitle {
+  font-size: 16px;
+  color: #848484;
+  text-align: center;
+}
+
+.icon-img {
+  width: 40px;
+  height: 40px;
+}
